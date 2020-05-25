@@ -1,0 +1,24 @@
+- name: install Contyn
+  hosts: localhost
+  become: yes
+
+  roles:
+    # - name: ufw
+    #   vars: ~
+
+    # - name: docker
+    #   vars:
+    #     docker_apt_repository: deb [arch=amd64] https://download.docker.com/linux/debian buster stable
+
+    - name: ldap
+      vars:
+        param: value1
+
+    # - name: authentica
+    #   vars: ~
+
+    # - name: traefik
+    #   vars: ~
+
+    # - name: borg
+    #   vars: ~
